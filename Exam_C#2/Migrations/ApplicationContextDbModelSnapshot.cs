@@ -3,7 +3,6 @@ using System;
 using Exam_C_2.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -20,15 +19,11 @@ namespace Exam_C_2.Migrations
                 .HasAnnotation("ProductVersion", "8.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
-
-            modelBuilder.Entity("Example_C_2.Models.ComicBook", b =>
+            modelBuilder.Entity("Exam_C_2.Models.ComicBook", b =>
                 {
                     b.Property<int>("ComicBookId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("ComicBookId"));
 
                     b.Property<string>("Author")
                         .IsRequired()
@@ -48,13 +43,11 @@ namespace Exam_C_2.Migrations
                     b.ToTable("ComicBooks");
                 });
 
-            modelBuilder.Entity("Example_C_2.Models.Customer", b =>
+            modelBuilder.Entity("Exam_C_2.Models.Customer", b =>
                 {
                     b.Property<int>("CustomerId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("CustomerId"));
 
                     b.Property<string>("FullName")
                         .IsRequired()
@@ -74,13 +67,11 @@ namespace Exam_C_2.Migrations
                     b.ToTable("Customers");
                 });
 
-            modelBuilder.Entity("Example_C_2.Models.Rental", b =>
+            modelBuilder.Entity("Exam_C_2.Models.Rental", b =>
                 {
                     b.Property<int>("RentalId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("RentalId"));
 
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
@@ -101,13 +92,11 @@ namespace Exam_C_2.Migrations
                     b.ToTable("Rentals");
                 });
 
-            modelBuilder.Entity("Example_C_2.Models.RentalDetail", b =>
+            modelBuilder.Entity("Exam_C_2.Models.RentalDetail", b =>
                 {
                     b.Property<int>("RentalDetailId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("RentalDetailId"));
 
                     b.Property<int>("ComicBookId")
                         .HasColumnType("int");

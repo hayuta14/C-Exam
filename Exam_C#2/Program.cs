@@ -1,21 +1,23 @@
-using Example_C_2.Context;
+﻿using Exam_C_2.Context;
 using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<ApplicationContextDb>(Options =>
+// ✅ Sử dụng MySQL
+builder.Services.AddDbContext<ApplicationContextDb>(options =>
 {
-    Options.UseSqlServer(builder.Configuration.GetConnectionString("connectionDatabaseString"));
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("connectionDatabaseString"),
+        new MySqlServerVersion(new Version(8, 0, 33))
+    // Ghi đúng version của MySQL bạn đang dùng
+    );
 });
-
-
 
 var app = builder.Build();
 
@@ -27,9 +29,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

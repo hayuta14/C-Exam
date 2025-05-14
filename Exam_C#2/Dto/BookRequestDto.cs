@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Example_C_2.Dto
+namespace Exam_C_2.Dto
 {
     public class BookRequestDto
     {

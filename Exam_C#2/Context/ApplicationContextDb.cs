@@ -1,7 +1,7 @@
-﻿using Example_C_2.Models;
+﻿using Exam_C_2.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Example_C_2.Context
+namespace Exam_C_2.Context
 {
     public class ApplicationContextDb : DbContext
     {

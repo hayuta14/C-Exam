@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HA\\Documents\\program\\C#\\exam 2\\Example_C#2\\Example_C#2.csproj": {}
+    "C:\\Users\\HA\\Documents\\program\\C#\\exam 2\\Exam_C#2\\Example_C#2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HA\\Documents\\program\\C#\\exam 2\\Example_C#2\\Example_C#2.csproj": {
+    "C:\\Users\\HA\\Documents\\program\\C#\\exam 2\\Exam_C#2\\Example_C#2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HA\\Documents\\program\\C#\\exam 2\\Example_C#2\\Example_C#2.csproj",
+        "projectUniqueName": "C:\\Users\\HA\\Documents\\program\\C#\\exam 2\\Exam_C#2\\Example_C#2.csproj",
         "projectName": "Example_C#2",
-        "projectPath": "C:\\Users\\HA\\Documents\\program\\C#\\exam 2\\Example_C#2\\Example_C#2.csproj",
+        "projectPath": "C:\\Users\\HA\\Documents\\program\\C#\\exam 2\\Exam_C#2\\Example_C#2.csproj",
         "packagesPath": "C:\\Users\\HA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HA\\Documents\\program\\C#\\exam 2\\Example_C#2\\obj\\",
+        "outputPath": "C:\\Users\\HA\\Documents\\program\\C#\\exam 2\\Exam_C#2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\HA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -45,17 +52,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -81,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

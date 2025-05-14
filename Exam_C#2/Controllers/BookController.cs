@@ -1,10 +1,10 @@
-﻿using Example_C_2.Context;
-using Example_C_2.Dto;
-using Example_C_2.Models;
+﻿using Exam_C_2.Context;
+using Exam_C_2.Dto;
+using Exam_C_2.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Example_C_2.Controllers
+namespace Exam_C_2.Controllers
 {
     [Route("api/v1/books")]
     [ApiController]

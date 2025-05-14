@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "nlEEdEIDYIAkUX4TjPcmzw11KSXmwh6YMWzU/O0VDEs=",
-  "Source": "Example_C#2",
-  "BasePath": "_content/Example_C#2",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"uAD5LtpkAClumKYsESoaOGS05Q7TpXO8SOLZolTmgAw=","Source":"Example_C#2","BasePath":"_content/Example_C#2","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
